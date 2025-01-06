@@ -42,18 +42,17 @@
             height: 100%;
             padding: 0;
             margin: 0;
-
-            /* Title and Abstract container */
+             /* Title and Abstract container */
         .info-box {
             position: absolute;
-            top: 5px; /* Adjust this value to position */
+            top: 3px; /* Adjust this value to position */
             left: 50px;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             z-index: 1000;
-            max-width: 500px;
+            max-width: 450px;
         }
 
         .info-box h1 {
@@ -65,24 +64,18 @@
 
         .info-box p {
             margin: 5px 0 0;
-            font-size: 12px;
+            font-size: 11px;
             color: #333;
         }
         .ol-zoom {
     top: 125px !important; /* Move controls down */
     left: 0px !important; /* Change as needed to position horizontally */
-
-    /* Adjusting the position of the scale line */
-.ol-fabinoculars {
-    bottom: 40px !important; /* Position above the bottom */
-    left: 10px !important; /* Adjust for horizontal positioning */
-}
-
-/* Adjusting the position of the custom search control */
-.ol-search {
-    top: 120px !important; /* Adjust vertical position */
-    right: 10px !important; /* Adjust horizontal position */
-}
+}       
+        .search-layer-input-search .binocular-icon {
+    top: 125px !important; /* Move controls down */
+    left: 3px !important; /* Change as needed to position horizontally */
+        }
+        
         }
         </style>
         <title></title>
@@ -94,19 +87,20 @@
                 <div id="popup-content"></div>
             </div>
         </div>
-        <div class="info-box">
-        <h1>Punjab Auqaf Mosques</h1>
-        <p>Hover over a point to view mosque details.<br>
+         <div class="info-box">
+        <h1>Punjab Auqaf Mosques<h1>
+        <p>Click on a point to view mosque details.<br>
         Zoom in to view the precise location of the mosque.<br>
-        Click on the binoculars icon above the zoom toggles to search a mosque by its name.</p>
+        Click the binoculars icon on the left to search for a mosque by its name.<p>
+    </div>
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
         <script src="resources/horsey.min.js"></script>
         <script src="resources/ol3-search-layer.js"></script>
         <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="layers/Punjab_2.js"></script><script src="layers/MosqueInformation_3.js"></script>
-        <script src="styles/Punjab_2_style.js"></script><script src="styles/MosqueInformation_3_style.js"></script>
+        <script src="layers/Punjab_1.js"></script><script src="layers/MosqueInformation_2.js"></script>
+        <script src="styles/Punjab_1_style.js"></script><script src="styles/MosqueInformation_2_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>

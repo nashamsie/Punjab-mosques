@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([7051181.165594, 3076744.557293, 9028187.288494, 4212908.333582], map.getSize());
+map.getView().fit([7018397.652184, 3140301.815187, 8842891.425957, 4190468.932564], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -113,7 +113,7 @@ var featureOverlay = new ol.layer.Vector({
 });
 
 var doHighlight = false;
-var doHover = true;
+var doHover = false;
 
 function createPopupField(currentFeature, currentFeatureKeys, layer) {
     var popupText = '';
@@ -829,7 +829,7 @@ if (elementToMove && parentElement) {
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_MosqueInformation_3,
+    layer: lyr_MosqueInformation_2,
     colName: 'Mosque Name',
     zoom: 10,
     collapsed: true,
